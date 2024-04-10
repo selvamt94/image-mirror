@@ -150,6 +150,6 @@
     ],
     "versionSource": "registry",
     "versionConstraint": ">=5.3.3",
-    "versionFilter": "^[5-9])\\.[0-9]\\.[0-9][-s[0-9]]+$"
+    "versionFilter": "^[5-9]\\.[0-9]\\.[0-9][-s0-9]*$"
   }
 }
