@@ -570,10 +570,13 @@ sync:
   target: stgregistry.suse.com/rancher/mirrored-directxman12-k8s-prometheus-adapter-amd64:v0.8.3
   type: image
 - source: dp.apps.rancher.io/charts/kubernetes-cluster-autoscaler:9.50.1
-  target: registry.suse.com/rancher/charts/appco-kubernetes-cluster-autoscaler:9.50.1
+  target: docker.io/rancher/appco-kubernetes-cluster-autoscaler:9.50.1
   type: image
 - source: dp.apps.rancher.io/charts/kubernetes-cluster-autoscaler:9.50.1
-  target: stgregistry.suse.com/rancher/charts/appco-kubernetes-cluster-autoscaler:9.50.1
+  target: registry.suse.com/rancher/appco-kubernetes-cluster-autoscaler:9.50.1
+  type: image
+- source: dp.apps.rancher.io/charts/kubernetes-cluster-autoscaler:9.50.1
+  target: stgregistry.suse.com/rancher/appco-kubernetes-cluster-autoscaler:9.50.1
   type: image
 - source: dp.apps.rancher.io/containers/k8s-sidecar:1.30.7-11.3
   target: docker.io/rancher/appco-k8s-sidecar:1.30.7-11.3
@@ -583,6 +586,15 @@ sync:
   type: image
 - source: dp.apps.rancher.io/containers/k8s-sidecar:1.30.7-11.3
   target: stgregistry.suse.com/rancher/appco-k8s-sidecar:1.30.7-11.3
+  type: image
+- source: dp.apps.rancher.io/containers/kubernetes-cluster-autoscaler:1.32.3-1.5
+  target: docker.io/rancher/appco-kubernetes-cluster-autoscaler:1.32.3-1.5
+  type: image
+- source: dp.apps.rancher.io/containers/kubernetes-cluster-autoscaler:1.33.0-3.3
+  target: docker.io/rancher/appco-kubernetes-cluster-autoscaler:1.33.0-3.3
+  type: image
+- source: dp.apps.rancher.io/containers/kubernetes-cluster-autoscaler:1.34.0-3.4
+  target: docker.io/rancher/appco-kubernetes-cluster-autoscaler:1.34.0-3.4
   type: image
 - source: dp.apps.rancher.io/containers/kubernetes-cluster-autoscaler:1.32.3-1.5
   target: registry.suse.com/rancher/appco-kubernetes-cluster-autoscaler:1.32.3-1.5
@@ -9077,6 +9089,9 @@ sync:
 - source: neuvector/controller:5.3.4
   target: docker.io/rancher/mirrored-neuvector-controller:5.3.4
   type: image
+- source: neuvector/controller:5.3.5
+  target: docker.io/rancher/mirrored-neuvector-controller:5.3.5
+  type: image
 - source: neuvector/controller:5.4.0
   target: docker.io/rancher/mirrored-neuvector-controller:5.4.0
   type: image
@@ -9151,6 +9166,9 @@ sync:
   type: image
 - source: neuvector/controller:5.3.4
   target: registry.suse.com/rancher/mirrored-neuvector-controller:5.3.4
+  type: image
+- source: neuvector/controller:5.3.5
+  target: registry.suse.com/rancher/mirrored-neuvector-controller:5.3.5
   type: image
 - source: neuvector/controller:5.4.0
   target: registry.suse.com/rancher/mirrored-neuvector-controller:5.4.0
@@ -9227,6 +9245,9 @@ sync:
 - source: neuvector/controller:5.3.4
   target: stgregistry.suse.com/rancher/mirrored-neuvector-controller:5.3.4
   type: image
+- source: neuvector/controller:5.3.5
+  target: stgregistry.suse.com/rancher/mirrored-neuvector-controller:5.3.5
+  type: image
 - source: neuvector/controller:5.4.0
   target: stgregistry.suse.com/rancher/mirrored-neuvector-controller:5.4.0
   type: image
@@ -9301,6 +9322,9 @@ sync:
   type: image
 - source: neuvector/enforcer:5.3.4
   target: docker.io/rancher/mirrored-neuvector-enforcer:5.3.4
+  type: image
+- source: neuvector/enforcer:5.3.5
+  target: docker.io/rancher/mirrored-neuvector-enforcer:5.3.5
   type: image
 - source: neuvector/enforcer:5.4.0
   target: docker.io/rancher/mirrored-neuvector-enforcer:5.4.0
@@ -9377,6 +9401,9 @@ sync:
 - source: neuvector/enforcer:5.3.4
   target: registry.suse.com/rancher/mirrored-neuvector-enforcer:5.3.4
   type: image
+- source: neuvector/enforcer:5.3.5
+  target: registry.suse.com/rancher/mirrored-neuvector-enforcer:5.3.5
+  type: image
 - source: neuvector/enforcer:5.4.0
   target: registry.suse.com/rancher/mirrored-neuvector-enforcer:5.4.0
   type: image
@@ -9451,6 +9478,9 @@ sync:
   type: image
 - source: neuvector/enforcer:5.3.4
   target: stgregistry.suse.com/rancher/mirrored-neuvector-enforcer:5.3.4
+  type: image
+- source: neuvector/enforcer:5.3.5
+  target: stgregistry.suse.com/rancher/mirrored-neuvector-enforcer:5.3.5
   type: image
 - source: neuvector/enforcer:5.4.0
   target: stgregistry.suse.com/rancher/mirrored-neuvector-enforcer:5.4.0
@@ -9527,6 +9557,9 @@ sync:
 - source: neuvector/manager:5.3.4
   target: docker.io/rancher/mirrored-neuvector-manager:5.3.4
   type: image
+- source: neuvector/manager:5.3.5
+  target: docker.io/rancher/mirrored-neuvector-manager:5.3.5
+  type: image
 - source: neuvector/manager:5.4.0
   target: docker.io/rancher/mirrored-neuvector-manager:5.4.0
   type: image
@@ -9602,6 +9635,9 @@ sync:
 - source: neuvector/manager:5.3.4
   target: registry.suse.com/rancher/mirrored-neuvector-manager:5.3.4
   type: image
+- source: neuvector/manager:5.3.5
+  target: registry.suse.com/rancher/mirrored-neuvector-manager:5.3.5
+  type: image
 - source: neuvector/manager:5.4.0
   target: registry.suse.com/rancher/mirrored-neuvector-manager:5.4.0
   type: image
@@ -9676,6 +9712,9 @@ sync:
   type: image
 - source: neuvector/manager:5.3.4
   target: stgregistry.suse.com/rancher/mirrored-neuvector-manager:5.3.4
+  type: image
+- source: neuvector/manager:5.3.5
+  target: stgregistry.suse.com/rancher/mirrored-neuvector-manager:5.3.5
   type: image
 - source: neuvector/manager:5.4.0
   target: stgregistry.suse.com/rancher/mirrored-neuvector-manager:5.4.0
@@ -20399,6 +20438,9 @@ sync:
 - source: registry.k8s.io/sig-storage/csi-snapshotter:v8.2.0
   target: docker.io/rancher/mirrored-sig-storage-csi-snapshotter:v8.2.0
   type: image
+- source: registry.k8s.io/sig-storage/csi-snapshotter:v8.4.0
+  target: docker.io/rancher/mirrored-sig-storage-csi-snapshotter:v8.4.0
+  type: image
 - source: registry.k8s.io/sig-storage/csi-snapshotter:v5.0.1
   target: registry.suse.com/rancher/mirrored-sig-storage-csi-snapshotter:v5.0.1
   type: image
@@ -20423,6 +20465,9 @@ sync:
 - source: registry.k8s.io/sig-storage/csi-snapshotter:v8.2.0
   target: registry.suse.com/rancher/mirrored-sig-storage-csi-snapshotter:v8.2.0
   type: image
+- source: registry.k8s.io/sig-storage/csi-snapshotter:v8.4.0
+  target: registry.suse.com/rancher/mirrored-sig-storage-csi-snapshotter:v8.4.0
+  type: image
 - source: registry.k8s.io/sig-storage/csi-snapshotter:v5.0.1
   target: stgregistry.suse.com/rancher/mirrored-sig-storage-csi-snapshotter:v5.0.1
   type: image
@@ -20446,6 +20491,9 @@ sync:
   type: image
 - source: registry.k8s.io/sig-storage/csi-snapshotter:v8.2.0
   target: stgregistry.suse.com/rancher/mirrored-sig-storage-csi-snapshotter:v8.2.0
+  type: image
+- source: registry.k8s.io/sig-storage/csi-snapshotter:v8.4.0
+  target: stgregistry.suse.com/rancher/mirrored-sig-storage-csi-snapshotter:v8.4.0
   type: image
 - source: registry.k8s.io/sig-storage/livenessprobe:v2.10.0
   target: docker.io/rancher/mirrored-sig-storage-livenessprobe:v2.10.0
