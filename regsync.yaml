@@ -10754,6 +10754,9 @@ sync:
 - source: quay.io/calico/cni:v3.31.0
   target: docker.io/rancher/mirrored-calico-cni:v3.31.0
   type: image
+- source: quay.io/calico/cni:v3.31.2
+  target: docker.io/rancher/mirrored-calico-cni:v3.31.2
+  type: image
 - source: quay.io/calico/cni:v3.13.4
   target: registry.suse.com/rancher/mirrored-calico-cni:v3.13.4
   type: image
@@ -10889,6 +10892,9 @@ sync:
 - source: quay.io/calico/cni:v3.31.0
   target: registry.suse.com/rancher/mirrored-calico-cni:v3.31.0
   type: image
+- source: quay.io/calico/cni:v3.31.2
+  target: registry.suse.com/rancher/mirrored-calico-cni:v3.31.2
+  type: image
 - source: quay.io/calico/cni:v3.13.4
   target: stgregistry.suse.com/rancher/mirrored-calico-cni:v3.13.4
   type: image
@@ -11023,6 +11029,9 @@ sync:
   type: image
 - source: quay.io/calico/cni:v3.31.0
   target: stgregistry.suse.com/rancher/mirrored-calico-cni:v3.31.0
+  type: image
+- source: quay.io/calico/cni:v3.31.2
+  target: stgregistry.suse.com/rancher/mirrored-calico-cni:v3.31.2
   type: image
 - source: quay.io/calico/csi:v3.27.0
   target: docker.io/rancher/mirrored-calico-csi:v3.27.0
