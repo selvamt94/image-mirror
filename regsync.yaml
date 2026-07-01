@@ -20927,6 +20927,9 @@ sync:
 - source: sonobuoy/sonobuoy:v0.57.3
   target: docker.io/rancher/mirrored-sonobuoy-sonobuoy:v0.57.3
   type: image
+- source: sonobuoy/sonobuoy:v0.57.5
+  target: docker.io/rancher/mirrored-sonobuoy-sonobuoy:v0.57.5
+  type: image
 - source: sonobuoy/sonobuoy:v0.16.3
   target: registry.suse.com/rancher/mirrored-sonobuoy-sonobuoy:v0.16.3
   type: image
@@ -20966,6 +20969,9 @@ sync:
 - source: sonobuoy/sonobuoy:v0.57.3
   target: registry.suse.com/rancher/mirrored-sonobuoy-sonobuoy:v0.57.3
   type: image
+- source: sonobuoy/sonobuoy:v0.57.5
+  target: registry.suse.com/rancher/mirrored-sonobuoy-sonobuoy:v0.57.5
+  type: image
 - source: sonobuoy/sonobuoy:v0.16.3
   target: stgregistry.suse.com/rancher/mirrored-sonobuoy-sonobuoy:v0.16.3
   type: image
@@ -21004,6 +21010,9 @@ sync:
   type: image
 - source: sonobuoy/sonobuoy:v0.57.3
   target: stgregistry.suse.com/rancher/mirrored-sonobuoy-sonobuoy:v0.57.3
+  type: image
+- source: sonobuoy/sonobuoy:v0.57.5
+  target: stgregistry.suse.com/rancher/mirrored-sonobuoy-sonobuoy:v0.57.5
   type: image
 - source: sonobuoy/sonobuoy:v0.19.0
   target: docker.io/rancher/sonobuoy-sonobuoy:v0.19.0
